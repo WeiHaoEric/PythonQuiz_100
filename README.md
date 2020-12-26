@@ -14,6 +14,7 @@ This is a challenge to review Python 100 quiz!!
 data = ["1", "2", "...", "999"]
 print ",".join(data)
 ```
+- `python3`針對func的`input`指令，會將所有的輸入都設定為`string`
 
 - `string`內建的func`split`，可以自動的把內建的某個字元隔開，並回傳一個`list`。而list也可以與`tuple`直接互相轉換喔。
 
@@ -21,3 +22,15 @@ print ",".join(data)
 - 之前開發`js`的時候，因為套件`Colonize`，按下`Shift+Enter`可直接產生`;`
 - 微軟出的`Python套件`, 在coding python時，可直接按下`Shift+Enter`，然後就會在`console window`印出結果。
 
+
+### Class
+- `class`的基本架構如下:
+```python=
+class Test(object):
+  def __init__(self, para1, para2,...):
+    self.publicVar = None
+    self.__privateVar = None
+    ...
+  def funcA(self, para1, para2,...):
+    ...
+```
