@@ -36,12 +36,12 @@ class Test(object):
 ```
 
 ### list
-- `Python List`可以提供如`JS array.map/filter/reduce`的方法，如下介紹:
-#### map in Python and JS
+- `Python List`可以提供如`JS array.map/filter/reduce`的方法，可[參考教學](https://stackabuse.com/map-filter-and-reduce-in-python-with-examples/)如下介紹:
+#### map
 - in JS: 簡短有力，直接使用`arrow func`來直接處理
 ```javascript=
-let data = [1,3,5,7,9]
-data.map((val)=>val*val)
+let data = [1,3,5,7,9];
+data.map((val)=>val*val);
 ```
 
 - in Python: 可以定義一個`func`或用`lambda 輸入參數:參數處理`來啟用`map`，但要記得用`list(mapObj)`來解開所有迭代處理後的數值。
@@ -55,5 +55,34 @@ print( list(map(aFunc, data)) )
 
 # method2: map + lambda
 print( list(map( lambda val:(val*val), data)) )
+```
+
+#### filter
+- in JS:
+```javascript=
+let fruit = ["Apple", "Banana", "Pear", "Apricot", "Orange"];
+let result = fruit.filter((f)=>f[0]==="A");
+```
+
+- in Python:
+```python
+fruit = ["Apple", "Banana", "Pear", "Apricot", "Orange"]
+result = [f for f in fruit if f[0]=="A"]
+
+```
+
+### reduce
+- in JS:
+```javascript=
+let data = [1,2,3,4,5];
+let result = a.reduce((sum, val)=>sum+val)
+```
+
+- in Python:
+```python=
+from functools import reduce
+data = [1,2,3,4,5];
+reduce(lambda sum,val:sum+val, data)
+
 ```
 
