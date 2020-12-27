@@ -8,6 +8,11 @@ This is a challenge to review Python 100 quiz!!
 ---
 
 ## Tips
+
+### Vscode Python套件
+- 之前開發`js`的時候，因為套件`Colonize`，按下`Shift+Enter`可直接產生`;`
+- 微軟出的`Python套件`, 在coding python時，可直接按下`Shift+Enter`，然後就會在`console window`印出結果。
+
 ### String 
 - 假設一個List裡面的element都是*string*，今天我想要用一行呈現所有的element，並以comma-separated隔開，可以如下進行:
 ```=python
@@ -17,11 +22,6 @@ print ",".join(data)
 - `python3`針對func的`input`指令，會將所有的輸入都設定為`string`
 
 - `string`內建的func`split`，可以自動的把內建的某個字元隔開，並回傳一個`list`。而list也可以與`tuple`直接互相轉換喔。
-
-### Vscode Python套件
-- 之前開發`js`的時候，因為套件`Colonize`，按下`Shift+Enter`可直接產生`;`
-- 微軟出的`Python套件`, 在coding python時，可直接按下`Shift+Enter`，然後就會在`console window`印出結果。
-
 
 ### Class
 - `class`的基本架構如下:
@@ -37,7 +37,10 @@ class Test(object):
 
 ### list
 - `Python List`可以提供如`JS array.map/filter/reduce`的方法，可[參考教學](https://stackabuse.com/map-filter-and-reduce-in-python-with-examples/)如下介紹:
-#### map
+- `quiz10`學習`set`與`list`的切換，以及 `list`如何使用它內建的`sort` 及外部的func `sorted`，建議可複習。
+>- sort方法1:`['c', 'a', 'z'].sort() # ['a', 'c', 'z']`
+>- sort方法2: `sorted(['c', 'a', 'z']) #['a', 'c', 'z']`
+#### map(func, list)
 - in JS: 簡短有力，直接使用`arrow func`來直接處理
 ```javascript=
 let data = [1,3,5,7,9];
@@ -71,7 +74,7 @@ result = [f for f in fruit if f[0]=="A"]
 
 ```
 
-### reduce
+### reduce(func, data)
 - in JS:
 ```javascript=
 let data = [1,2,3,4,5];
