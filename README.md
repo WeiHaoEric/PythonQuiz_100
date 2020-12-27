@@ -34,3 +34,26 @@ class Test(object):
   def funcA(self, para1, para2,...):
     ...
 ```
+
+### list
+- `Python List`可以提供如`JS array.map/filter/reduce`的方法，如下介紹:
+#### map in Python and JS
+- in JS: 簡短有力，直接使用`arrow func`來直接處理
+```javascript=
+let data = [1,3,5,7,9]
+data.map((val)=>val*val)
+```
+
+- in Python: 可以定義一個`func`或用`lambda 輸入參數:參數處理`來啟用`map`，但要記得用`list(mapObj)`來解開所有迭代處理後的數值。
+```python=
+def aFunc(val):
+  return val*val
+
+data = [1,3,5,7,9]
+# method1: map + func
+print( list(map(aFunc, data)) )
+
+# method2: map + lambda
+print( list(map( lambda val:(val*val), data)) )
+```
+
