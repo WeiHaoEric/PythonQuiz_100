@@ -89,3 +89,17 @@ reduce(lambda sum,val:sum+val, data)
 
 ```
 
+## 數值轉換
+### Binary -> Decimal
+```python=
+B = "0010"
+print(int(B,2))
+```
+
+### Decimal to Binary
+```python=
+D = 10
+print(bin(D)) # 0b1010, 含 "0b" prefix
+print(bin(D)[2:]) # 1010, 不含 "0b" prefix
+
+```
