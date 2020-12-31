@@ -23,6 +23,23 @@ print ",".join(data)
 
 - `string`內建的func`split`，可以自動的把內建的某個字元隔開，並回傳一個`list`。而list也可以與`tuple`直接互相轉換喔。
 
+- 快速判斷`str`是否為數字，可以
+```python=
+dataA = "10"
+dataA.isdigit() # True
+
+dataB = "AAA"
+dataB.isdigit() # False
+```
+
+
+### list與str之間的轉換
+```python=
+a = 1234   
+b = str(a) #"1234"
+listB = list(b) #['1','2','3','4']
+```
+
 ### Class
 - `class`的基本架構如下:
 ```python=
