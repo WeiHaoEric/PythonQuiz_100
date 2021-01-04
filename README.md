@@ -32,6 +32,13 @@ dataB = "AAA"
 dataB.isdigit() # False
 ```
 
+- `String`好用的`func`
+| Func | Desc |
+| -------- | -------- |
+| '66'.isdigit()     | 確認是否為`數字`     |
+| 'A'.isupper()      | 確認是否為`大寫`     |
+| 'a'.islower()      | 確認是否為`小寫`     |
+
 
 ### list與str之間的轉換
 ```python=
@@ -91,7 +98,7 @@ result = [f for f in fruit if f[0]=="A"]
 
 ```
 
-### reduce(func, data)
+#### reduce(func, data)
 - in JS:
 ```javascript=
 let data = [1,2,3,4,5];
@@ -120,3 +127,35 @@ print(bin(D)) # 0b1010, 含 "0b" prefix
 print(bin(D)[2:]) # 1010, 不含 "0b" prefix
 
 ```
+
+## Loop迴圈
+### break, continue, pass [這篇教學很清楚](https://reurl.cc/e80kob)
+- `break`: 跳出迴圈
+- `continue`: 跳過這個參數（以下的程式碼不進行），往下個參數進行
+>- 當今天要寫一個`多條件檢查`, 用`continue`就非常適合
+>```python=
+# 假設我要寫一個，過濾`a,c,e`的filter
+data = "abcde"
+result = []
+for i in data:
+    if (i == "a"):
+      continue
+    elif (i == "c"):
+      continue
+    elif (i == "e"):
+      continue
+    else:
+      pass #<-- pass有寫沒寫，都會往下進行，不過有`if...elif...也要有個else`，故用`pass`補到`else`
+    
+    result.append(i)
+print(result) # $['b','d']
+```
+- `pass`: 程式碼不進行），往下個參數進行
+
+- <font color="red">強烈建議:</font> quiz-18一定要練習
+
+
+
+---
+## 一定要複習
+- quiz-18
