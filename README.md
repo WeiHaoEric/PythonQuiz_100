@@ -10,7 +10,31 @@ This is a challenge to review Python 100 quiz!!
 
 - quiz-19
 >- 練習如何用短短5行寫出一個`loop-for-input`
->- 練習`sorted`搭配`lambda`及`operator.itemgetter 或 operator.attrigetter`, [這篇教學寫得不錯](https://reurl.cc/3L8kbj)
+>- 練習`sorted`搭配`lambda`及`operator.itemgetter 或 operator.attrigetter`, [這篇](https://reurl.cc/3L8kbj) [和這篇](https://reurl.cc/6lp3yr) 教學寫得不錯
+
+
+- quiz-20 [教學](https://reurl.cc/Q31QAO)
+>- 練習如何使用`yield`來產生`generator`
+>- `generator`物件直接印出，會如下資訊`<generator object TestFunc at 0x10414e4a0>`
+>- `generator-object`可直接轉換`list`, ex: `resultList = list(genObjs)`
+```python=
+def TestFunc(start, end):
+    i = start
+    while(i<end):
+        if(i%7==0):
+            yield i #<-- yield 宣告i為generator的object, 把它當作return來看，就好懂多了
+        i+=1
+
+# 方法1: 直接轉為generator -> list
+
+print("=== 方法1 ===")
+print(list(TestFunc(0, 10))) # [0, 7]
+
+# 方法2: 用for-loop直接對generator-object取值
+print("=== 方法2 ===")
+for i in TestFunc(start=0, end=10):
+    print(i) # 0 7
+```
 
 ## Tips
 
