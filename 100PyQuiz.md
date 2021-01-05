@@ -743,21 +743,22 @@ Hints:
     Define a instance parameter, need add it in __init__ method
     You can init a object with construct parameter or set the value later
 
-Solution:
+Solution(修正為python3.x格式):
 class Person:
     # Define the class parameter "name"
     name = "Person"
-    
-    def __init__(self, name = None):
+
+    def __init__(self, name=None):
         # self.name is the instance parameter
         self.name = name
 
+
 jeffrey = Person("Jeffrey")
-print "%s name is %s" % (Person.name, jeffrey.name)
+print(f"${Person.name} name is ${jeffrey.name}")
 
 nico = Person()
 nico.name = "Nico"
-print "%s name is %s" % (Person.name, nico.name)
+print(f"${Person.name} name is ${nico.name}")
 #----------------------------------------#
 
 #----------------------------------------#
