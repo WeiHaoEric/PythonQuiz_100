@@ -2,10 +2,15 @@
 This is a challenge to review Python 100 quiz!!
 - 過程中，我將整理我所發現的技巧，以利複習。
 ---
-## Progress
-- 12/24: 
-
 ---
+## 一定要複習
+- quiz-18
+>- 練習`Loop的break/continue/pass`
+>- 練習`regular-expression` [re教學](https://reurl.cc/yg5Kda)
+
+- quiz-19
+>- 練習如何用短短5行寫出一個`loop-for-input`
+>- 練習`sorted`搭配`lambda`及`operator.itemgetter 或 operator.attrigetter`, [這篇教學寫得不錯](https://reurl.cc/3L8kbj)
 
 ## Tips
 
@@ -156,6 +161,3 @@ print(result) # $['b','d']
 
 
 
----
-## 一定要複習
-- quiz-18
