@@ -36,6 +36,19 @@ for i in TestFunc(start=0, end=10):
     print(i) # 0 7
 ```
 
+- quiz-23
+>- 數值的平方
+```python=
+a=5 
+a**2
+```
+
+- quiz-24
+>- 每個python內建的func都有一個函式 func.__doc__ 可以讓你查詢，ex: `print(print.__doc__)`
+
+
+
+
 ## Tips
 
 ### Vscode Python套件
@@ -164,6 +177,7 @@ print(bin(D)[2:]) # 1010, 不含 "0b" prefix
 >- 當今天要寫一個`多條件檢查`, 用`continue`就非常適合
 >```python=
 # 假設我要寫一個，過濾`a,c,e`的filter
+```python=
 data = "abcde"
 result = []
 for i in data:
