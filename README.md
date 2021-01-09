@@ -56,7 +56,7 @@ a**2
 - 微軟出的`Python套件`, 在coding python時，可直接按下`Shift+Enter`，然後就會在`console window`印出結果。
 
 ### String 
-- 假設一個List裡面的element都是*string*，今天我想要用一行呈現所有的element，並以comma-separated隔開，可以如下進行:
+- 假設一個List裡面的element都是`string`，今天我想要用一行呈現所有的element，並以comma-separated隔開，可以如下進行:
 ```=python
 data = ["1", "2", "...", "999"]
 print ",".join(data)
